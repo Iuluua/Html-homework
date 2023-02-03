@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html homework</title>
+    <style>
+        fieldset{
+            display: inline;
+            width: 430px;
+        }
+        #table-article{
+            margin-bottom: 20px;
+        }
+        .margin-bottom-15px{
+            margin-bottom: 15px;
+        }
+        #submit-reset-div{
+            margin-bottom: 17px;
+        }
+        #fullname-div{
+            margin-top: 17px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,7 +30,7 @@
     </header>
 
     <main>
-        <article>
+        <article id="table-article">
             <table border="2">
                 <thead>
                     <tr>
@@ -78,6 +96,75 @@
                     </tr>
                 </tbody>
             </table>
+        </article>
+
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Ask us about planets</legend>
+                    
+                    <div id="fullname-div" class="margin-bottom-15px">
+                        <label for="fullname">Full name: </label>
+                        <input id="fullname" type="text" name="fullname" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email: </label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+
+
+                    <p>Favorite planet: </p>
+                    <div>
+                        <input id="mercury" type="radio" name="planet" value="mercury">
+                        <label for="mercury">Mercury</label>
+                    </div>
+                    <div>
+                        <input id="venus" type="radio" name="planet" value="venus">
+                        <label for="venus">Venus</label>
+                    </div>
+                    <div>
+                        <input id="earth" type="radio" name="planet" checked value="earth">
+                        <label for="earth">Earth</label>
+                    </div>
+                    <div>
+                        <input id="mars" type="radio" name="planet" value="mars">
+                        <label for="mars">Mars</label>
+                    </div>
+                    <div>
+                        <input id="jupiter" type="radio" name="planet" value="jupiter">
+                        <label for="jupiter">Jupiter</label>
+                    </div>
+                    <div>
+                        <input id="saturn" type="radio" name="planet" value="saturn">
+                        <label for="saturn">Saturn</label>
+                    </div>
+                    <div>
+                        <input id="uranus" type="radio" name="planet" value="uranus">
+                        <label for="uranus">Uranus</label>
+                    </div>
+                    <div>
+                        <input id="neptune" type="radio" name="planet" value="neptune">
+                        <label for="neptune">Neptune</label>
+                    </div>
+                    <div class="margin-bottom-15px">
+                        <input id="pluto" type="radio" name="planet" value="pluto">
+                        <label for="pluto">Pluto</label>
+                    </div>
+
+                    <div>
+                        <input class="margin-bottom-15px" id="termsncond" type="checkbox" name="agreed" value="yes" required>
+                        <label for="termsncond">
+                            I agree to the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">terms and conditions</a>
+                        </label>
+                    </div>
+
+                    <div id="submit-reset-div">
+                        <input type="reset" name="reset" value="Reset">
+                        <input type="submit" name="submit" value="Ask away">
+                    </div>
+                </fieldset>
+            </form>
         </article>
     </main>
 </body>
