@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/116/116859.png" type="image/x-icon">
     <title>Html homework</title>
     <style>
         fieldset{
@@ -110,7 +111,7 @@
 
                     <div>
                         <label for="email">Email: </label>
-                        <input id="email" type="email" name="email" required>
+                        <input id="email" type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     </div>
 
 
@@ -153,7 +154,7 @@
                     </div>
 
                     <div>
-                        <input class="margin-bottom-15px" id="termsncond" type="checkbox" name="agreed" value="yes" required>
+                        <input class="margin-bottom-15px" id="termsncond" type="checkbox" name="agree" value="yes" required>
                         <label for="termsncond">
                             I agree to the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">terms and conditions</a>
                         </label>
